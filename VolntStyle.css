@@ -1,0 +1,33 @@
+.vol-main
+{
+	text-align: left;
+	background-image: url(https://www.freewebheaders.com/wordpress/wp-content/gallery/wildlife/wildlife-header-22230-800x200.jpg);
+	background-size: cover;
+	background-position: center;
+	padding: 10%;
+	margin-top: 3%;
+}
+
+.WhiteC
+{
+	color: white;
+}
+
+.form-container{
+    width:35%;
+    float:right;
+}
+
+input[type="radio"]{
+    width:20px;
+}
+
+input, label, select, button, option {
+    width : 150px;
+    margin: 0;
+}
+
+.info{
+    width:50%;
+    float: left;
+}
