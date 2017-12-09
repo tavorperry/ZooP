@@ -17,8 +17,8 @@ if (!$success) {
  
 }
  
-echo "The Data Saved ! <br>
-Thank You For Contacting Us <br>";
+echo "Thank You $f_name For Your Passion To Volunteer !
+<br>The Data Saved ! <br>";
  
 $conn->close();
  
