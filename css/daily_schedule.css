@@ -1,0 +1,16 @@
+.welcome {
+	text-align: left;
+	background-image: url(https://www.freewebheaders.com/wordpress/wp-content/gallery/wildlife/african-lion-header.jpg);
+	background-size: cover;
+	background-position: center;
+	margin-top: 2.7%;
+	color: white;
+}
+
+.WhiteC {
+	color: white;
+}
+
+p {
+	font-family: Josefin Sans;
+}
