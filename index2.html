@@ -3,7 +3,7 @@
   <head>
     <title>Zoo Gallery</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/index2.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Acme|Bree+Serif|Indie+Flower|Josefin+Sans:600" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,17 +21,17 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index2.html"><i class="fa fa-leaf" aria-hidden="true"></i> MTA Zoo</a>
+            <a class="navbar-brand" href="#"><i class="fa fa-leaf" aria-hidden="true"></i> MTA Zoo</a>
           </div>
   
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="index2.html">About <span class="sr-only">(current)</span></a>
-              <li><a href="gallery.html">Our Animals</a></li>
-                <li><a href="map.html">Zoo Map</a></li>
+                <li class="active"><a href="index2.html">About <span class="sr-only">(current)</span></a></li>
+                <li><a href="gallery.html">Our Animals</a></li>
+                <li><a href="#">Zoo Map</a></li>
                 <li><a href="#">Zoo Aquarium</a></li>
                 <li><a href="#">Visitor Info</a></li>
-                <li><a href="daily_schedule.html">Daily Schedule<span class="sr-only">(current)</span></a></li>
+                <li><a href="daily_schedule.html">Daily Schedule</a></li>
                 <li><a href="volunteer.php">Volunteering</a></li>
             </ul> 
           </div>
@@ -42,104 +42,125 @@
       <div class="welcome jumbotron">
         <div class="container">
             <h1 class="WhiteC"> Welcome to MTA Zoo <i class="fa fa-leaf" aria-hidden="true"></i> </h1>
-              <p>
-                MTA Zoo is the largest and oldest zoological garden in Tel-Aviv<br>
-                and the only sub-tropical zoo in Israel
-              </p>
+            <p class="WhiteC">MTA Zoo is the largest and oldest zoological garden in Tel-Aviv</p>
+            <p class="WhiteC">and the only sub-tropical zoo in Israel</p>
             <p><a class="btn btn-warning btn-lg" href="#" role="button">Purchase Tickets</a></p>
         </div>
       </div>
     </header>
 
-    <main>
-      <div class="container"> 
-        <div class="whats-new">
-          <img class="center" src="Photos/whatsnew.jpg" width="90" >
-          <p class="time"> NOVEMBER 23 2017</p>
-          <h3>New monkey is burn</h3>
-          <p class="sideline">
-            This week a new monkey was born in the zoo. The new monkey still has no name. Want to influence the choice of the new name?
-            Click on the name that they think is most suitable for the monkey and send us your offer.
-          </p>
-          <form action="post" mailto="admin@MTAZOO.com" >
-            <fieldset>
-              <h4> Choose the Monkey Name: </h4>
-              <br>
-              <label for="a2"><input id="a2" name="choname" type="radio" value="tavor"> Tavor</label>
-              <label for="b2"><input id="ba2" name="choname" type="radio" value="almog"> Almog</label>
-              <label for="c2"><input id="c2" name="choname" type="radio" value="moshe"> Moshe</label>
-              <br>
-              <input type="submit" value="send_message">
-            </fieldset>
-          </form>
-          <hr>
-          <p class="time"> NOVEMBER 15 2017</p>
-          <h3>Gorilla throws block of wood at pregnant woman’s head in New Orleans zoo</h3>
-          <p class="sideline">
-            A gorilla in a zoo in New Orleans launched a piece of wood at a visitor, striking them in the head and knocking them to the ground.
-          </p>
-          <p>
-            34-year-old Sylvia Cressy, who is six months pregnant, said she and other visitors at the zoo attempted to flee before the primate launched the missile, but was hit in the back of the head while trying to cover her face.
-          </p>
-          <p>
-            Officials at Audubon zoo described the incident as a “freak accident”, and said they are investigating a female gorilla named Praline.
-          </p>
-          <hr>
-            <p class="time"> NOVEMBER 5 2017</p>
-          <h3>Jonathan the lion: Visitors grieve for passing of 18-year-old lion at Houston Zoo</h3>
-          <p class="sideline">
-            Jonathan the lion has died at the age of 18 years old at Houston Zoo in Texas.
-          </p>
-          <p>
-            His death triggered an outpouring of grief and tributes to the “handsome cat” who was mostly to be found lounging in the sun alongside his pride of three females, often asleep as visitors peered through the glass into his enclosure.
-          </p>
-        </div>
-
-          <div class="cemps">
-            <h2>On our Zoo</h2>
-            <h3>Zoo LIVE!!!</h3>
+    <!-- Main -->
+    <div class="main">
+      <div class="container">
+        <section>
+          <div class="page-header">
+            <h2>News of the ZOO!<small> Updates about new animals, new science discovering and more..</small></h2>
+          </div>
+          <!-- News -->
+          <div class="row">
+            <div class="col-lg-4">
+              <p class="time">NOVEMBER 23 2017</p>
+              <h4>New monkey was burn</h4>
+              <blockquote>
+                <p>This week a new monkey was born in the zoo. The new monkey still has no name. Want to influence the choice of the new name? Click on the name that they think is most suitable for the monkey and send us your offer.</p>
+                <form action="post" mailto="admin@MTAZOO.com" >
+                    <fieldset>
+                      <label for="a2"><input id="a2" name="choname" type="radio" value="tavor"> Tavor</label>
+                      <label for="b2"><input id="ba2" name="choname" type="radio" value="almog"> Almog</label>
+                      <label for="c2"><input id="c2" name="choname" type="radio" value="moshe"> Moshe</label>
+                      <br>
+                      <input type="submit" value="Name the monkey!">
+                    </fieldset>
+                  </form>
+              </blockquote>
+            </div>
+            <div class="col-lg-4">
+                <p class="time">NOVEMBER 15 2017</p>
+                <h4>Gorilla throws block of wood at pregnant woman in New Orleans zoo</h4>
+                <blockquote>
+                  <p>34-year-old Sylvia Cressy, who is six months pregnant, said she and other visitors at the zoo attempted to flee before the primate launched the missile, but was hit in the back of the head while trying to cover her face.</p>
+                </blockquote>
+            </div>
+            <div class="col-lg-4">
+                <p class="time">NOVEMBER 5 2017</p>
+                <h4>Visitors grieve for passing of 18-year-old lion at Houston Zoo</h4>
+                <blockquote>
+                  <p>Jonathan the lion has died at the age of 18 years old at Houston Zoo in Texas. His death triggered an outpouring of grief and tributes to him. He was mostly to be found lounging in the sun alongside his pride of three females..</p>
+                </blockquote>
+            </div>
+          </div>
+        </section>
+        <!-- Vol of the month -->
+        <div class="row">
+            <div class="col-lg-6" id="vol-month">
+                <div class="page-header">
+                    <h2>Volunteers of the month</h2>
+                </div>
+              <div class="carousel slide" id="screenshot-carousel" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#screenshot-carousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#screenshot-carousel" data-slide-to="1"></li>
+                  <li data-target="#screenshot-carousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <div class="vol-photo">
+                    <img src="Photos/20170518_130140.jpg" alt="vol_photo">
+                    </div>
+                    <div class="carousel-caption">
+                      <h3>Moshe Even</h3>
+                      <p><q>For me, the zoo is like my house</q></p>
+                    </div>
+                  </div>
+                  <div class="item">
+                      <div class="vol-photo">
+                      <img src="Photos/22552334852_n.jpg" alt="vol_photo">
+                      </div>
+                      <div class="carousel-caption">
+                          <h3>Almog Cygel</h3>
+                          <p><q>There's nothing like the smell of the zoo in the morning</q></p>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="vol-photo">
+                      <img src="Photos/23722264_102111603_n.jpg" alt="vol_photo">
+                      </div>
+                      <div class="carousel-caption">
+                          <h3>Tavor Perry</h3>
+                          <p><q>When I get to the zoo I feel alive</q></p>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <p><a class="btn btn-primary btn-lg" href="volunteer.php" role="button" id="vol_button">Apply Volunteering</a></p>
+            </div>
+          <!-- Live video -->
+          <div class="col-lg-6">
+            <div class="live-video">
+              <div class="page-header">
+                  <h2>ZOO <span id="live">live!</span></h2>
+              </div>
               <div class="video-filter"></div>
               <video autoplay muted loop>
-                    <source src="movie.mp4" type="video/mp4">
+                    <source src="https://dl.dropboxusercontent.com/s/38k4bkzxi1w8wgq/movie.mp4" type="video/mp4">
                     Your browser does not support the video tag. <!-- video error if not supported -->
               </video>
-            <hr>
-
-            <h3>Workers of the week</h3>
-            <div class="row">
-              <div class="col-sm-4 col-md-4">
-                  <div class="thumbnail"> 
-                    <img src="Photos/20170518_130140.jpg" alt="worker_photo" >
-                    <div class="caption">
-                      <h3>Moshe Even</h3>
-                        <p><q>For me, the zoo is like my house</q></p>
-                    </div>
-                  </div>
-              </div>
-
-                <div class="col-sm-4 col-md-4">
-                  <div class="thumbnail"> 
-                    <img src="Photos/22552334852_n.jpg" alt="worker_photo" >
-                    <div class="caption">
-                      <h3>Almog Cygel</h3>
-                      <p><q>There's nothing like the smell of the zoo in the morning</q></p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-sm-4 col-md-4">
-                  <div class="thumbnail"> 
-                    <img src="Photos/23722264_102111603_n.jpg" alt="worker_photo" >
-                    <div class="caption">
-                      <h3>Tavor Perry</h3>
-                      <p><q>When I get to the zoo I feel alive</q></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            </div>
+            <p><a class="btn btn-primary btn-lg" href="gallery.html" role="button" id="vol_button">Our animals</a></p>
           </div>
+        </div>
       </div>
-    </main>
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <div class="my-footer">
+        <div class="social">
+          <h3>TEST footer</h3>
+
+        </div>
+      </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>

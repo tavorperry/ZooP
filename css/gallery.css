@@ -39,6 +39,7 @@ p {
 	position: absolute;
     color: black;
     font-size: 23px;
+    padding: 3px;
 }
 
 .animal-image {
