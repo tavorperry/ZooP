@@ -9,7 +9,7 @@ Good Luck! :)
 
 Main rules:
 
-1.Add Comment for EVERY commit that you do.
+1. Add Comment for EVERY commit that you do.
   That will help us to follow after the changes that we do.
   
 2. Keep on clean code with comments inside the file to understand
