@@ -8,17 +8,11 @@ Please notice that that it tkaes few minuts till the changes are reflacted in th
 Good Luck! :)
 
 Main rules:
+
 1.Add Comment for EVERY commit that you do.
   That will help us to follow after the changes that we do.
+  
 2. Keep on clean code with comments inside the file to understand
--
--
--
--
--
--
--
--
--
+
 This is our URL to PRD: https://cdn.rawgit.com/tavorperry/ZooP/c29474b9/index2.html
 (Dont use it regulary)
