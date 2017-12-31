@@ -35,7 +35,10 @@ p {
 
 input {
 	padding: 4px;
+
 }
+
+
 
 .time {
 	color:blue;
@@ -91,7 +94,7 @@ footer {
 	font-weight: bold;
 }
 
-label {
+.whiteColor label{
 	color: #ffffff;
 }
 
@@ -108,5 +111,7 @@ textarea.message {
 	border-radius: 3px;
 	border: none;
 }
+
+
 
 
