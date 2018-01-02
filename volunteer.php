@@ -163,7 +163,7 @@
         return false;
     }
     if(phone.length<10 || phone.length>11){
-       alert("Enter valid phone number");
+       alert("Enter a valid phone number");
         return false;
     }
 }

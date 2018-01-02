@@ -145,19 +145,18 @@ if (!$success) {
 }
 //Thank you msg
 echo "<p class='thank_you'>"."Thank You $f_name For Your Passion To Volunteer !
-<br>The Data Was Saved ! <br> We will contact you soon !"."</p>";
+<br>The Data Was Saved and we will contact you soon !"."</p>";
 
 $conn->close();
 ?>
 <body>
-	<h3>You will be redirect to the main page in several seconds </h3>
-  <br><br>
   <img src="Photos/Loading_icon.gif" alt="Loading icon">
+  <h3>You will be redirect to the main page in several seconds </h3>
 	<h2> <a href=index2.html>Click Here</a> if you are not redirected automatically </h2>
 <script>
 setTimeout(function() {
   window.location.href = "index2.html";
-}, 6000);
+}, 10000);
 </script>
 </body>
 </html>
