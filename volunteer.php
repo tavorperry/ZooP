@@ -12,113 +12,7 @@
 
   <body>
 
-    <?php
-    // define the variables and set to empty values
-    $f_nameErr = $l_nameErr = $emailErr = $m_statusErr = $idErr = $adressErr = $jobErr = $phoneErr =  $DOBErr = $genderErr = "";
-    $f_name = $l_name= $email = $gender = $DOB = $m_status = $id = $adress = $job = $phone = "";
 
-    // Remove any valiarbles we dont use 
-
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-      if (empty($_POST["f_name"])) {
-        $f_nameErr = "First name is required";
-      } else {
-        $f_name = test_input($_POST["f_name"]);
-
-        // check if the name only contains letters and whitespace
-        if (!preg_match("/^[a-zA-Z ]*$/",$f_name)) {
-          $f_nameErr = "Only letters and white space allowed"; 
-        }
-      }
-
-      if (empty($_POST["l_name"])) {
-        $l_nameErr = "Last name is required";
-      } else {
-        $l_name = test_input($_POST["l_name"]);
-
-        // check if the name only contains letters and whitespace
-        if (!preg_match("/^[a-zA-Z ]*$/",$l_name)) {
-          $l_nameErr = "Only letters and white space allowed"; 
-        }
-      }
-
-      if (empty($_POST["email"])) {
-        $emailErr = "Email is required";
-      } else {
-        $email = test_input($_POST["email"]);
-
-        // check if e-mail address is well-formed
-        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-          $emailErr = "Invalid email format"; 
-        }
-      }
-        //Check if the "prg_metch" is good
-        if (empty($_POST["DOB"])) {
-        $DOBErr = "Date of birth is required";
-      } else {
-        $DOB = test_input($_POST["DOB"]);
-
-        // check if Date of birth is well-formed
-        if (!preg_match("/^[0-9_:\.-]* /",$DOB)) {
-          $DOBErr = "Ivalid Date of birth format"; 
-        }
-      }
-
-      if (empty($_POST["adress"])) {
-        $adress = "";
-      } else {
-        $adress = test_input($_POST["adress"]);
-      }
-
-        if (empty($_POST["job"])) {
-        $job = "";
-      } else {
-        $job = test_input($_POST["job"]);
-      }
-
-      if (empty($_POST["gender"])) {
-        $genderErr = "Gender is required";
-      } else {
-        $gender = test_input($_POST["gender"]);
-      }
-
-      if (empty($_POST["m_status"])) {
-        $m_statusErr = "Marriage Status is required";
-      } else {
-        $m_status = test_input($_POST["m_status"]);
-      }
-
-        if (empty($_POST["id"])) {
-        $idErr = "ID is required";
-      } else {
-        $id = test_input($_POST["id"]);
-
-        // check if ID is well-formed
-        if (!preg_match("/^[0-9]{9}$/",$id)) {
-          $idErr = "Ivalid ID format"; 
-        }
-      }
-
-        if (empty($_POST["phone"])) {
-        $phoneErr = "Phone number is required";
-      } else {
-        $phone = test_input($_POST["phone"]);
-
-        // check if ID is well-formed
-        if (!preg_match("/^[0-9]{10}$/",$phone)) {
-          $phoneErr = "Ivalid phone number"; 
-        }
-      }
-    }
-
-    function test_input($data) {
-      $data = trim($data);
-      $data = stripslashes($data);
-      $data = htmlspecialchars($data);
-      return $data;
-    }
-
-    ?>
   <!-- Header and Navigation -->
   <header>
     <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
@@ -130,16 +24,16 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#"><i class="fa fa-leaf" aria-hidden="true"></i> MTA Zoo</a>
+            <a class="navbar-brand" href="index2.html"><i class="fa fa-leaf" aria-hidden="true"></i> MTA Zoo</a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <li><a href="index2.html">About</a></li>
                 <li><a href="gallery.html">Our Animals</a></li>
-                <li><a href="#">Zoo Map</a></li>
+                <li><a href="map.html">Zoo Map</a></li>
                 <li><a href="#">Zoo Aquarium</a></li>
-                <li><a href="#">Visitor Info</a></li>
-                <li><a href="#">Daily Schedule</a></li>
+                <li><a href="daily_schedule.html">Daily Schedule</a></li>
+                <li><a href="volunteer.php">Volunteering</a></li>
                 <li class="active"><a href="#">Volunteering</a><span class="sr-only">(current)</span></li>
             </ul> 
         </div>
@@ -180,28 +74,28 @@
 
   <div class="form-container" action="thank_you.php" method="post"> 
     <p><span class="error">* required field.</span></p>
-        <form method="post" action="thank_you.php">
+        <form name=volunteer method="post" action="thank_you.php" onsubmit="return validateForm()">
         <!-- <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>"> -->
             <div>
-                <label for="f_name">First name</label>
+                <label class=field for="f_name">First name</label>
                 <input id="f_name" name="f_name" required="" type="text" value="<?php echo $f_name;?>">
                 <span class="error">* <?php echo $f_nameErr;?></span>
             </div><br>
 
             <div>
-                <label for="l_name">Last name</label>
+                <label class=field for="l_name">Last name</label>
                 <input id="l_name" name="l_name" required="" type="text" value="<?php echo $l_name;?>">
                 <span class="error">* <?php echo $l_nameErr;?></span>
             </div><br>
 
               <div>
-                <label for="email">Email</label>
+                <label class=field for="email">Email</label>
                 <input id="email" name="email" required="" type="email" value="<?php echo $email;?>">
                 <span class="error">* <?php echo $emailErr;?></span>
             </div><br>
 
             <div>
-                <label for="m_status">Marriage status</label>
+                <label class=field for="m_status">Marriage status</label>
                 <select name="m_status">
                   <!--tavor-add here auto complete!-->
                     <option>Single</option>
@@ -212,40 +106,40 @@
             </div><br>
 
             <div>
-                <label for="DOB">DOB</label>
+                <label class=field for="DOB">DOB</label>
                 <input id="DOB" name="DOB" required="" type="date" value="<?php echo $DOB;?>">
                 <span class="error">* <?php echo $DOBErr;?></span>
             </div><br>
 
             <div>
-                <label for="id">ID number</label>
+                <label class=field for="id">ID number</label>
                 <input id="id" name="id" required="" type="number" value="<?php echo $id;?>">
                 <span class="error">* <?php echo $idErr;?></span>
             </div><br>
 
             <div>
-                <label for="adress">Adress</label>
+                <label class=field for="adress">Adress</label>
                 <input id="adress" name="adress" type="text" value="<?php echo $adress;?>">
                 <span class="error"> <?php echo $adressErr;?></span>
             </div><br>
 
             <div>
-                <label for="job">Job</label>
+                <label class=field for="job">Job</label>
                 <input id="job" name="job" type="text" value="<?php echo $job;?>">
                 <span class="error"> <?php echo $jobErr;?></span>
             </div><br>
 
             <div>
-                <label for="phone">Phone</label>
-                <input id="phone" name="phone" required="" type="tele" value="<?php echo $phone;?>">
+                <label class=field for="phone">Phone</label>
+                <input id="phone" name="phone" required="" type="tel" value="<?php echo $phone;?>">
                 <span class="error">* <?php echo $phoneErr;?></span>
             </div><br>
 
         <div>
-            <label for="gender" value="<?php echo $gender;?>">Gender</label><br>
-            <input type="radio" name="gender" value="male" <?php if (isset($gender) && $gender=="male") echo "checked";?>>Male
-            <input type="radio" name="gender" value="female" <?php if (isset($gender) && $gender=="female") echo "checked";?>>Female
-            <input type="radio" name="gender" value="other" <?php if (isset($gender) && $gender=="other") echo "checked";?>>Other
+            <label class=field for="gender" value="<?php echo $gender;?>">Gender</label><br>
+            <label for="male"><input type="radio" name="gender" value="male" id=male <?php if (isset($gender) && $gender=="male") echo "checked";?>>Male</label>
+             <label for="female"><input type="radio" name="gender" value="female" id=female<?php if (isset($gender) && $gender=="female") echo "checked";?>>Female</label>
+             <label for="other"><input type="radio" name="gender" value="other" id=other<?php if (isset($gender) && $gender=="other") echo "checked";?>>Other</label>
             <span class="error">* <?php echo $genderErr;?></span>
         </div><br>
 
@@ -254,15 +148,26 @@
         </form>
      </div>
 
-    <div class="embed-responsive embed-responsive-16by9">
-      <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=Nubc09jTW-M"></iframe>
-    </div>
-
     <script
     src="https://code.jquery.com/jquery-3.2.1.js"
     integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
     crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script>
+      function validateForm() {
+    var id = document.forms["volunteer"]["id"].value;
+    var phone = document.forms["volunteer"]["phone"].value;
+    if (id.length!=9) {
+        alert("ID number must be 9 digits");
+        return false;
+    }
+    if(phone.length<10 || phone.length>11){
+       alert("Enter valid phone number");
+        return false;
+    }
+}
+    </script>
   </body>
 </html>
 

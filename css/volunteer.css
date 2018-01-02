@@ -28,7 +28,12 @@ input[type="radio"] {
     width:20px;
 }
 
-input, label, select, button, option {
+input, select, button, option{
+    width : 150px;
+    margin: 0;
+}
+
+label.field{
     width : 150px;
     margin: 0;
 }
