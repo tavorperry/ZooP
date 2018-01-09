@@ -75,23 +75,19 @@
   <div class="form-container" action="thank_you.php" method="post"> 
     <p><span class="error">* required field.</span></p>
         <form name=volunteer method="post" action="thank_you.php" onsubmit="return validateForm()">
-        <!-- <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>"> -->
             <div>
                 <label class=field for="f_name">First name</label>
-                <input id="f_name" name="f_name" required="" type="text" value="<?php echo $f_name;?>">
-                <span class="error">* <?php echo $f_nameErr;?></span>
+                <input id="f_name" name="f_name" required="" type="text">
             </div><br>
 
             <div>
                 <label class=field for="l_name">Last name</label>
-                <input id="l_name" name="l_name" required="" type="text" value="<?php echo $l_name;?>">
-                <span class="error">* <?php echo $l_nameErr;?></span>
+                <input id="l_name" name="l_name" required="" type="text">
             </div><br>
 
               <div>
                 <label class=field for="email">Email</label>
-                <input id="email" name="email" required="" type="email" value="<?php echo $email;?>">
-                <span class="error">* <?php echo $emailErr;?></span>
+                <input id="email" name="email" required="" type="email">
             </div><br>
 
             <div>
@@ -107,32 +103,27 @@
 
             <div>
                 <label class=field for="DOB">DOB</label>
-                <input id="DOB" name="DOB" required="" type="date" value="<?php echo $DOB;?>">
-                <span class="error">* <?php echo $DOBErr;?></span>
+                <input id="DOB" name="DOB" required="" type="date">
             </div><br>
 
             <div>
                 <label class=field for="id">ID number</label>
-                <input id="id" name="id" required="" type="number" value="<?php echo $id;?>">
-                <span class="error">* <?php echo $idErr;?></span>
+                <input id="id" name="id" required="" type="number">
             </div><br>
 
             <div>
                 <label class=field for="adress">Adress</label>
-                <input id="adress" name="adress" type="text" value="<?php echo $adress;?>">
-                <span class="error"> <?php echo $adressErr;?></span>
+                <input id="adress" name="adress" type="text">
             </div><br>
 
             <div>
                 <label class=field for="job">Job</label>
-                <input id="job" name="job" type="text" value="<?php echo $job;?>">
-                <span class="error"> <?php echo $jobErr;?></span>
+                <input id="job" name="job" type="text">
             </div><br>
 
             <div>
                 <label class=field for="phone">Phone</label>
-                <input id="phone" name="phone" required="" type="tel" value="<?php echo $phone;?>">
-                <span class="error">* <?php echo $phoneErr;?></span>
+                <input id="phone" name="phone" required="" type="tel">
             </div><br>
 
         <div>

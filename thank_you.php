@@ -137,15 +137,15 @@ $adress = $conn->real_escape_string($_POST['adress']);
 $phone = $conn->real_escape_string($_POST['phone']);
 $gender = $conn->real_escape_string($_POST['gender']);
 
-$query   = "INSERT into MyVolunteers_Test(firstname,lastname,email,marriage_status,date_of_birth,id_number,job,adress,phone,gender) VALUES('" . $f_name . "','" . $l_name . "','" . $email . "','" . $marriage_status . "','" . $date_of_birth . "','" . $id_number . "','" . $job. "','" . $phone."','" . $gender. "','" . $adress . "')";
+$query   = "INSERT into MyVolunteers(firstname,lastname,email,marriage_status,date_of_birth,id_number,job,adress,phone,gender) VALUES('" . $f_name . "','" . $l_name . "','" . $email . "','" . $marriage_status . "','" . $date_of_birth . "','" . $id_number . "','" . $job. "','" . $phone."','" . $gender. "','" . $adress . "')";
 $success = $conn->query($query);
  
 if (!$success) {
     die("Couldn't enter data: ".$conn->error);
 }
 //Thank you msg
-echo "<p class='thank_you'>"."Thank You $f_name For Your Passion To Volunteer !
-<br>The Data Was Saved and we will contact you soon !"."</p>";
+echo "<p class='thank_you'>"."Thank You <span class=saved>$f_name</span> For Your Passion To Volunteer !
+<br><span class='saved'>"."The Data Was Saved "."</span><br> and we will contact you soon !"."</p>";
 
 $conn->close();
 ?>
