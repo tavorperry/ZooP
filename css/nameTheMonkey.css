@@ -1,0 +1,23 @@
+.voted{
+	color:red;
+}
+.thank_you{
+	font-size: 40px;
+	text-align: center;
+}
+body{
+	text-align: center;
+}
+table{
+ color: red;
+ text-align:center; 
+ align-content: center;
+ background-color:yellow; 
+ border: 2px blue solid;
+}
+ tr{ color: red; 
+ 	border: 2px blue solid;
+ } 
+ td{ color: red; 
+ 	border: 2px blue solid;
+ }
