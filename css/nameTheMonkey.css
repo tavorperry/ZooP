@@ -11,7 +11,7 @@ body{
 table{
  color: red;
  text-align:center; 
- align-content: center;
+ margin: auto;
  background-color:yellow; 
  border: 2px blue solid;
 }
@@ -21,3 +21,4 @@ table{
  td{ color: red; 
  	border: 2px blue solid;
  }
+ 
