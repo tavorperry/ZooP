@@ -23,7 +23,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#"><i class="fa fa-leaf" aria-hidden="true"></i> MTA Zoo</a>
+            <a class="navbar-brand" href="index2.html"><i class="fa fa-leaf" aria-hidden="true"></i> MTA Zoo</a>
           </div>
   
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
