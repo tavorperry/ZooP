@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
-  <body>
+  <body onload="">
 
 
   <!-- Header and Navigation -->
@@ -77,7 +77,7 @@
         <form name=volunteer method="post" action="thank_you.php" onsubmit="return validateForm()">
             <div>
                 <label class=field for="f_name">First name</label>
-                <input id="f_name" name="f_name" required="" type="text">
+                <input id="f_name" name="f_name" required="" type="text" autofocus>
             </div><br>
 
             <div>
@@ -127,11 +127,10 @@
             </div><br>
 
         <div>
-            <label class=field for="gender" value="<?php echo $gender;?>">Gender</label><br>
-            <label for="male"><input type="radio" name="gender" value="male" id=male <?php if (isset($gender) && $gender=="male") echo "checked";?>>Male</label>
-             <label for="female"><input type="radio" name="gender" value="female" id=female<?php if (isset($gender) && $gender=="female") echo "checked";?>>Female</label>
-             <label for="other"><input type="radio" name="gender" value="other" id=other<?php if (isset($gender) && $gender=="other") echo "checked";?>>Other</label>
-            <span class="error">* <?php echo $genderErr;?></span>
+            <label class=field for="gender" >Gender</label><br>
+            <label for="male"><input type="radio" name="gender" value="male" id=male required="">Male</label>
+             <label for="female"><input type="radio" name="gender" value="female" id=female required="">Female</label>
+             <label for="other"><input type="radio" name="gender" value="other" id=other required="">Other</label>
         </div><br>
 
         <input type="submit" value="Apply now!">
@@ -149,15 +148,30 @@
       function validateForm() {
     var id = document.forms["volunteer"]["id"].value;
     var phone = document.forms["volunteer"]["phone"].value;
+    var email = document.forms["volunteer"]["email"].value;
+    var DOB = document.forms["volunteer"]["DOB"].value;
+
     if (id.length!=9) {
         alert("ID number must be 9 digits");
-        return false;
+        $('input[name=id]').focus();
+        return (false);
     }
-    if(phone.length<10 || phone.length>11){
+    if (phone.length<10 || phone.length>11){
        alert("Enter a valid phone number");
+       $('input[name=phone]').focus();
         return false;
     }
-}
+    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email) == false) {
+      alert("You have entered an invalid email address!");
+      $('input[name=email]').focus();
+      return (false);
+    }
+    if (DOB.substr(0,4) > (new Date()).getFullYear()-12){
+        alert("Sorry friend - You can volunteer only from the age 13");
+        $('input[name=DOB]').focus();
+        return (false);
+    }
+    }
     </script>
   </body>
 </html>
