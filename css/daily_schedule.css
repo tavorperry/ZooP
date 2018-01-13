@@ -20,6 +20,9 @@ blink {
     -webkit-animation: 1.5s linear infinite condemned_blink_effect; // for android
     animation: 1.5s linear infinite condemned_blink_effect;
 }
+#click_here{
+    font-size: 30px;
+}
 @-webkit-keyframes condemned_blink_effect { // for android
     0% {
         visibility: hidden;
