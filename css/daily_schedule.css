@@ -15,15 +15,18 @@
 	font-family: Josefin Sans;
 	text-align: center;
 }
+
 blink {
 	font-size: 20px;
-    -webkit-animation: 1.5s linear infinite condemned_blink_effect; // for android
+    -webkit-animation: 1.5s linear infinite condemned_blink_effect;
     animation: 1.5s linear infinite condemned_blink_effect;
 }
+
 #click_here{
     font-size: 30px;
 }
-@-webkit-keyframes condemned_blink_effect { // for android
+
+@-webkit-keyframes condemned_blink_effect {
     0% {
         visibility: hidden;
     }
@@ -34,6 +37,7 @@ blink {
         visibility: visible;
     }
 }
+
 @keyframes condemned_blink_effect {
     0% {
         visibility: hidden;
