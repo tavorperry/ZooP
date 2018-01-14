@@ -1,9 +1,9 @@
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="css/thank_you.css">
     <title>Thnak you</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/volunteer.css">
+    <link rel="stylesheet" type="text/css" href="css/thank_you.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Acme|Bree+Serif|Indie+Flower|Josefin+Sans:600" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -63,7 +63,7 @@
         $f_name = test_input($_POST["f_name"]);
 
         // check if the name only contains letters and whitespace
-        if (!preg_match("/^[a-zA-Z ]*$/",$f_name)) {
+      if (!preg_match("/^[a-zA-Z ]*$/",$f_name)) {
           $f_nameErr = "Only letters and white space allowed"; 
         }
       }
@@ -74,7 +74,7 @@
         $l_name = test_input($_POST["l_name"]);
 
         // check if the name only contains letters and whitespace
-        if (!preg_match("/^[a-zA-Z ]*$/",$l_name)) {
+      if (!preg_match("/^[a-zA-Z ]*$/",$l_name)) {
           $l_nameErr = "Only letters and white space allowed"; 
         }
       }
@@ -84,23 +84,22 @@
       } else {
         $email = test_input($_POST["email"]);
 
-        // check if e-mail address is well-formed
-        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+      // check if e-mail address is well-formed
+      if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
           $emailErr = "Invalid email format"; 
         }
       }
-        if (empty($_POST["DOB"])) {
+      if (empty($_POST["DOB"])) {
         $DOBErr = "Date of birth is required";
       } 
       
-
       if (empty($_POST["adress"])) {
         $adress = "";
       } else {
         $adress = test_input($_POST["adress"]);
       }
 
-        if (empty($_POST["job"])) {
+      if (empty($_POST["job"])) {
         $job = "";
       } else {
         $job = test_input($_POST["job"]);
@@ -118,18 +117,18 @@
         $m_status = test_input($_POST["m_status"]);
       }
 
-        if (empty($_POST["id"])) {
+      if (empty($_POST["id"])) {
         $idErr = "ID is required";
       } else {
         $id = test_input($_POST["id"]);
 
         // check if ID is well-formed
-        if (!preg_match("/^[0-9]{9}$/",$id)) {
-          $idErr = "Ivalid ID format"; 
+      if (!preg_match("/^[0-9]{9}$/",$id)) {
+        $idErr = "Ivalid ID format"; 
         }
       }
 
-        if (empty($_POST["phone"])) {
+      if (empty($_POST["phone"])) {
         $phoneErr = "Phone number is required";
       } else {
         $phone = test_input($_POST["phone"]);
@@ -151,13 +150,13 @@
 if($l_nameErr !="" || $emailErr !="" || $m_statusErr !="" || $idErr !="" || $adressErr !="" || $jobErr !="" || $phoneErr !="" ||  $DOBErr !="" || $genderErr!="" ) {
     if($l_nameErr !="")
          echo "$l_nameErr <br>";
-      if($emailErr !="")
+    if($emailErr !="")
          echo "$emailErr <br>"; 
     if($m_statusErr !="")
          echo "$m_statusErr <br>";
     if($idErr !="")
          echo "$idErr <br>";
-      if($adressErr !="")
+    if($adressErr !="")
          echo "$adressErr <br>"; 
     if($jobErr !="")
          echo "$jobErr <br>";
@@ -187,7 +186,7 @@ $query   = "INSERT into MyVolunteers(firstname,lastname,email,marriage_status,da
 $success = $conn->query($query);
  
 if (!$success) {
-    die("Couldn't enter data: ".$conn->error);
+  die("Couldn't enter data: ".$conn->error);
 }
 //Thank you msg
 echo "<p class='thank_you'>"."Thank You <span class=saved>$f_name</span> For Your Passion To Volunteer !
