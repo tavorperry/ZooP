@@ -1,7 +1,10 @@
 $(document).ready(function () {
-    getAnimalTitles();
-    animalTitleTransition();
-
+    if(typeof jQuery=="undefined"){
+        alert("jQuery id undefined");
+    }else{
+        getAnimalTitles();
+        animalTitleTransition();
+    }
 });
 
 /**
