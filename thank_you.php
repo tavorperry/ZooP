@@ -27,7 +27,7 @@
             <ul class="nav navbar-nav">
                 <li><a href="index2.html">About</a></li>
                 <li><a href="gallery.html">Our Animals</a></li>
-                <li><a href="map.html">Zoo Map</a></li>
+                <li><a href="#">Zoo Map</a></li>
                 <li><a href="#">Zoo Aquarium</a></li>
                 <li><a href="#">Visitor Info</a></li>
                 <li><a href="daily_schedule.html">Daily Schedule</a></li>
