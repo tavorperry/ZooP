@@ -14,43 +14,42 @@
   <body>
     <!-- Header and Navigation -->
     <header>
-      <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="index2.html"><i class="fa fa-leaf" aria-hidden="true"></i> MTA Zoo</a>
-          </div>
-  
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="index2.html">About <span class="sr-only">(current)</span></a></li>
-              <li><a href="gallery.html">Our Animals</a></li>
-              <li><a href="#">Zoo Map</a></li>
-              <li><a href="#">Zoo Aquarium</a></li>
-              <li><a href="#">Visitor Info</a></li>
-              <li><a href="daily_schedule.html">Daily Schedule</a></li>
-              <li><a href="volunteer.html">Volunteering</a></li>
-            </ul> 
-          </div>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><i class="fa fa-leaf" aria-hidden="true"></i> MTA Zoo</a>
         </div>
-      </nav>
 
-      <!-- Welcome -->
-      <div class="welcome jumbotron">
-        <div class="container">
-            <h1 class="white-caption"> Welcome to MTA Zoo <i class="fa fa-leaf" aria-hidden="true"></i> </h1>
-            <p class="white-caption">MTA Zoo is the largest and oldest zoological garden in Tel-Aviv</p>
-            <p class="white-caption">and the only sub-tropical zoo in Israel</p>
-            <p><a class="btn btn-warning btn-lg" href="#" role="button">Purchase Tickets</a></p>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index2.html">About <span class="sr-only">(current)</span></a></li>
+            <li><a href="gallery.html">Our Animals</a></li>
+            <li><a href="#">Zoo Map</a></li>
+            <li><a href="#">Zoo Aquarium</a></li>
+            <li><a href="#">Visitor Info</a></li>
+            <li><a href="daily_schedule.html">Daily Schedule</a></li>
+            <li><a href="volunteer.html">Volunteering</a></li>
+          </ul> 
         </div>
       </div>
-    </header>
+    </nav>
 
+    <!-- Welcome -->
+    <div class="welcome jumbotron">
+      <div class="container">
+          <h1 class="white-caption"> Welcome to MTA Zoo <i class="fa fa-leaf" aria-hidden="true"></i> </h1>
+          <p class="white-caption">MTA Zoo is the largest and oldest zoological garden in Tel-Aviv</p>
+          <p class="white-caption">and the only sub-tropical zoo in Israel</p>
+          <p><a class="btn btn-warning btn-lg" href="#" role="button">Purchase Tickets</a></p>
+      </div>
+    </div>
+  </header>
 
 <?php include 'connection.php'; ?>
 <?php
