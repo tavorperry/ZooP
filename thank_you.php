@@ -39,8 +39,8 @@
         <!-- Welcome -->
         <div class="welcome jumbotron">
             <div class="container">
-              <h1 class="WhiteC"> Volunteering application <i class="fa fa-diamond" aria-hidden="true"></i> </h1>
-              <p class="WhiteC"> Our zoo is looking for super heros!<br>
+              <h1 class="white-caption"> Volunteering application <i class="fa fa-diamond" aria-hidden="true"></i> </h1>
+              <p class="white-caption"> Our zoo is looking for super heros!<br>
                     Wild animals and research species are in your blood?<br>
                     Apply to our volunteering team <b>NOW!</b>
               </p>
