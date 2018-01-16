@@ -24,3 +24,7 @@ tr { color: red;
 td { color: red; 
  	border: 2px blue solid;
  }
+
+ .white-caption {
+	color: white;
+}
