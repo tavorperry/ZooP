@@ -14,7 +14,7 @@
 }
 
 .white-caption {
-	color: white;
+	color: white !important;
 }
 
 /*main*/

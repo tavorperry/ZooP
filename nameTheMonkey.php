@@ -1,5 +1,4 @@
 <html>
-
 <head>
     <title>Name The Monkey - Vote</title>
     <link rel="stylesheet" type="text/css" href="css/index2.css"> 
@@ -82,5 +81,6 @@ if ($result->num_rows > 0) {
 }
 $conn->close();
 ?>
-</body>
+
+  </body>
 </html>
