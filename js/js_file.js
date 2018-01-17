@@ -1,9 +1,10 @@
 $(document).ready(function () {
     if(typeof jQuery=="undefined"){
         alert("jQuery id undefined");
-    }else{
+    } else {
         getAnimalTitles();
         animalTitleTransition();
+        videoControlsOnHoverPureJS();
     }
 });
 
@@ -43,3 +44,26 @@ function animalTitleTransition() {
         description.css('display', 'none');
     });
 }
+
+function videoControlsOnHover(){
+    var video = $('video');
+    video.hover(function() {
+        if (this.hasAttribute("controls")) {
+            this.removeAttribute("controls")
+        } else {
+            this.setAttribute("controls", "controls")
+        }
+    });
+}
+
+function videoControlsOnHoverPureJS() {
+    var video = document.getElementById('live_vid');
+    video.onmouseover = function(){
+        if(this.hasAttribute("controls")) {
+            this.removeAttribute("controls");
+        } else {
+            this.setAttribute("controls", "controls");
+        }
+    };
+}
+
