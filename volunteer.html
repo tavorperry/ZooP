@@ -9,10 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Acme|Bree+Serif|Indie+Flower|Josefin+Sans:600" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
-
-  <body onload="">
-
-
+  <body>
   <!-- Header and Navigation -->
   <header>
     <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
@@ -51,6 +48,8 @@
         </div>
     </header>
 
+    <!-- Main -->
+    <main>
     <div class="container"> 
       <div class="info">
         <h2>What you will do?</h2>
@@ -73,20 +72,20 @@
     </div>
 
   <div class="form-container" action="thank_you.php" method="post"> 
-    <p><span class="error">* required field.</span></p>
+    <p><span class="required">* Required Field</span></p>
         <form name=volunteer method="post" action="thank_you.php" onsubmit="return validateForm()">
             <div>
-                <label class=field for="f_name">First name</label>
+                <label class=field for="f_name"><span class="required">*</span>First name</label>
                 <input id="f_name" name="f_name" required="" type="text" autofocus>
             </div><br>
 
             <div>
-                <label class=field for="l_name">Last name</label>
+                <label class=field for="l_name"><span class="required">*</span>Last name</label>
                 <input id="l_name" name="l_name" required="" type="text">
             </div><br>
 
               <div>
-                <label class=field for="email">Email</label>
+                <label class=field for="email"><span class="required">*</span>Email</label>
                 <input id="email" name="email" required="" type="email">
             </div><br>
 
@@ -102,12 +101,12 @@
             </div><br>
 
             <div>
-                <label class=field for="DOB">DOB</label>
+                <label class=field for="DOB"><span class="required">*</span>DOB</label>
                 <input id="DOB" name="DOB" required="" type="date">
             </div><br>
 
             <div>
-                <label class=field for="id">ID number</label>
+                <label class=field for="id"><span class="required">*</span>ID number</label>
                 <input id="id" name="id" required="" type="number">
             </div><br>
 
@@ -122,12 +121,12 @@
             </div><br>
 
             <div>
-                <label class=field for="phone">Phone</label>
+                <label class=field for="phone"><span class="required">*</span>Phone</label>
                 <input id="phone" name="phone" required="" type="tel">
             </div><br>
 
         <div>
-            <label class=field for="gender" >Gender</label><br>
+            <label class=field for="gender" ><span class="required">*</span>Gender</label><br>
             <label for="male"><input type="radio" name="gender" value="male" id=male required="">Male</label>
              <label for="female"><input type="radio" name="gender" value="female" id=female required="">Female</label>
              <label for="other"><input type="radio" name="gender" value="other" id=other required="">Other</label>
@@ -137,6 +136,8 @@
         <input type="reset" value="Reset form">
         </form>
      </div>
+ </div>
+</main>
 
     <script
     src="https://code.jquery.com/jquery-3.2.1.js"
