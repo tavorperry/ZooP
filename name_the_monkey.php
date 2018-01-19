@@ -52,11 +52,9 @@
 
 <?php include 'connection.php'; ?>
 <?php
-
 //This Part is to insert the variables into the DB
 $conn    = Connect();
 $choname = $conn->real_escape_string($_POST['choname']);
-
 $query   = "UPDATE `Name_The_Monkey` SET `value`=value+1 WHERE `name`='$choname'";
 $success = $conn->query($query);
 
