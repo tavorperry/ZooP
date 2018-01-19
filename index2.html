@@ -64,7 +64,7 @@
               <h4>New monkey was burn</h4>
               <blockquote>
                 <p>This week a new monkey was born in the zoo. The new monkey still has no name. Want to influence the choice of the new name? Click on the name that they think is most suitable for the monkey and send us your offer.</p>
-                <form method="post" action="nameTheMonkey.php" >
+                <form id="name-the-monkey" method="post" action="nameTheMonkey.php" >
                     <fieldset>
                       <label for="a2"><input id="a2" name="choname" type="radio" value="Tavor"> Tavor</label>
                       <label for="b2"><input id="b2" name="choname" type="radio" value="Almog"> Almog</label>
@@ -152,31 +152,33 @@
 
     <!-- footer -->
     <footer class="row">
-      <div class="container col-lg-12 ">
-        <div class="social">
-          <h3>Follow Us</h3>
-          <a class="social" href="#"> 
-          <img class="icon" src="http://www.mahamconsultants.com/wp-content/uploads/2016/03/Social-Media-Logos-Group.png" alt="socials_icon"> </a>
-        </div>
-        <div class="contact">
-        	<h3>Contact us</h3>
-        	<form class="contact" name="form" method="post">
-        		<label for="name" class="footer-label">Name</label><br>
-        		<input type="text" name="name" class="text" />
-        		<br><br>
+      <div class="container">
+          <div class="social col-lg-6">
+            <h3>Follow Us</h3>
+            <a class="social" href="#"> 
+            <img class="icon" src="http://www.mahamconsultants.com/wp-content/uploads/2016/03/Social-Media-Logos-Group.png" alt="socials_icon"> </a>
+          </div>
+          <div class="contact col-lg-6">
+            <h3>Contact us</h3>
+            <form id="contact-form" action="mailto:cygelman@gmail.com" enctype="text/plain" name="form" method="post">
+              <label for="name" class="footer-label">Name</label><br>
+              <input type="text" name="name" class="text" />
+              <br><br>
 
-        		<label for="name" class="footer-label">Email</label><br>
-        		<input type="Email" name="email" class="text" />
-        		<br><br>
+              <label for="name" class="footer-label">Email</label><br>
+              <input type="Email" name="email" class="text" />
+              <br><br>
 
-        		<label for="message" class="footer-label">Message</label><br>
-        		<textarea name="message" class="message"> </textarea>
-        		<br><br>
+              <label for="message" class="footer-label">Message</label><br>
+              <textarea name="message" class="message"> </textarea>
+              <br><br>
 
-        		<input type="button" name="submit" class="submit" value="Submit">
-        	</form>
-        </div>
-       </div>
+              <input type="button" name="submit" class="submit" value="Submit">
+              <input type="reset" value="Reset" class="reset">
+            </form>
+            <input type="button" action="mailto:cygelman@gmail.com" name="submit" class="send-email btn btn-default" value="Email us!">
+          </div>
+      </div>
     </footer>
 
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
