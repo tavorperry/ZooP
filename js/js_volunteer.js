@@ -1,11 +1,8 @@
 $(document).ready(function () {
     if(typeof jQuery=="undefined"){
         alert("jQuery id undefined");
-    } else {
-        validateForm();
     }
 });
-
 /**
  * Validate our form, Pure JS!
  */
@@ -28,11 +25,11 @@ function validateForm() {
     if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email) == false) {
       alert("You have entered an invalid email address!");
       $('input[name=email]').focus();
-      return (false);
+      return false;
     }
     if (DOB.substr(0,4) > (new Date()).getFullYear()-12){
         alert("Sorry friend - You can volunteer only from the age 13");
         $('input[name=DOB]').focus();
-        return (false);
+        return false;
     }
 }
