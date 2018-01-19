@@ -140,39 +140,9 @@
 
     <script
     src="https://code.jquery.com/jquery-3.2.1.js"
-    integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-    crossorigin="anonymous"></script>
+    integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-    <script>
-      function validateForm() {
-        var id = document.forms["volunteer"]["id"].value;
-        var phone = document.forms["volunteer"]["phone"].value;
-        var email = document.forms["volunteer"]["email"].value;
-        var DOB = document.forms["volunteer"]["DOB"].value;
-
-        if (id.length!=9) {
-            alert("ID number must be 9 digits");
-            $('input[name=id]').focus();
-            return (false);
-        }
-        if (phone.length<10 || phone.length>11){
-           alert("Enter a valid phone number");
-           $('input[name=phone]').focus();
-            return false;
-        }
-        if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email) == false) {
-          alert("You have entered an invalid email address!");
-          $('input[name=email]').focus();
-          return (false);
-        }
-        if (DOB.substr(0,4) > (new Date()).getFullYear()-12){
-            alert("Sorry friend - You can volunteer only from the age 13");
-            $('input[name=DOB]').focus();
-            return (false);
-        }
-    }
-    </script>
+    <script src="js/js_volunteer.js"></script>
   </body>
 </html>
 
