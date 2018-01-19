@@ -5,6 +5,7 @@
 	background-position: center;
 	margin-top: 2.7%;
 	color: white;
+    font-family: Josefin Sans;
 }
 
 h2 {
@@ -43,6 +44,10 @@ label.field{
     float: left;
 }
 
+main {
+    font-family: Josefin Sans;
+}
+
 input[type=submit], [type=reset] {
     width: 100%;
     background-color: rgb(140, 149, 231);
@@ -64,6 +69,6 @@ ul {
     line-height: 200%;
 }
 
-.error {
+.required {
     color: #FF0000;
 }
