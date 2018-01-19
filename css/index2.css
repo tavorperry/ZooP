@@ -121,6 +121,7 @@ textarea.message {
 .submit, .reset {
 	width: 49.4%;
 	margin-bottom: 2px;
+	font-size: 20px;
 }
 
 .send-email {
