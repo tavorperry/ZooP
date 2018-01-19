@@ -12,17 +12,6 @@ body {
 }
 
 table {
- color: red;
  text-align:center; 
  margin: auto;
- background-color:yellow; 
- border: 2px blue solid;
 }
-
-tr { color: red; 
- 	border: 2px blue solid;
-}
-
-td { color: red; 
- 	border: 2px blue solid;
- }
