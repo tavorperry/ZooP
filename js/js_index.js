@@ -1,6 +1,6 @@
-$(document).ready(function () {
-        videoControlsOnHover();
-});
+document.addEventListener('DOMContentLoaded', function(){ 
+    videoControlsOnHover();
+}, false);
 
 /**
  * Add controls when mouse over, Pure JS!
@@ -15,4 +15,3 @@ function videoControlsOnHover() {
         }
     };
 }
-
