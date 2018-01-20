@@ -4,7 +4,7 @@ $(document).ready(function () {
     }
 });
 /**
- * Validate our form, Pure JS!
+ * Validate our form
  */
 function validateForm() {
     var id = document.forms["volunteer"]["id"].value;

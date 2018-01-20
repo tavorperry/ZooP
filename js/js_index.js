@@ -1,6 +1,8 @@
 $(document).ready(function () {
     if(typeof jQuery=="undefined"){
         alert("jQuery id undefined");
+    } else {
+        videoControlsOnHover();
     }
 });
 
