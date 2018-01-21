@@ -10,19 +10,19 @@ $(document).ready(function () {
 /**
  * Get all titles from the animals page
  */
-function getAnimalTitles() {    
- var animals = $('.animal');
+ function getAnimalTitles() {    
+   var animals = $('.animal');
 
-    for (var i = 0; i < animals.length; i++) {
-        var animal = animals[i].id;
-        $('#' + animal + ' .description').load(animal + ".html .pmain h2").text();
-    }
+   for (var i = 0; i < animals.length; i++) {
+    var animal = animals[i].id;
+    $('#' + animal + ' .description').load(animal + ".html .pmain h2").text();
+}
 }
 
 /**
  * Mouse in mouse out transition
  */
-function animalTitleTransition() {
+ function animalTitleTransition() {
 
     // Mouse over
     var animalImage = $('.animal-image');

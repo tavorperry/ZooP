@@ -38,9 +38,9 @@ p {
 
 .description > h2 {
 	position: absolute;
-    color: black;
-    font-size: 23px;
-    padding: 3px;
+	color: black;
+	font-size: 23px;
+	padding: 3px;
 }
 
 .animal-image > img {

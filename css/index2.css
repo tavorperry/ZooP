@@ -35,7 +35,7 @@ q {
 
 #vol_button {
 	margin-top: 20px;
-    width: 100%;
+	width: 100%;
 }
 
 #gal_button{
@@ -72,17 +72,17 @@ input {
 
 /*footer*/
 footer {
-    width: 100%;
-    height: 550px;
-    background-color: #333;
+	width: 100%;
+	height: 550px;
+	background-color: #333;
 	font-size: 20px;
 	font-family: Josefin Sans;
 }
 
 .contact {
-    float: left;
-    margin-right: 0px;
-    margin-top: 20px;
+	float: left;
+	margin-right: 0px;
+	margin-top: 20px;
 }
 
 #contact-form {
@@ -127,8 +127,8 @@ textarea.message {
 }
 
 @media only screen and (max-width: 992px) {
-    #contact-form {
-        display: none;
+	#contact-form {
+		display: none;
 	}
 
 	.send-email {
@@ -141,8 +141,8 @@ textarea.message {
 }
 
 @media only screen and (max-width: 515px) {
-    #contact-form {
-        display: none;
+	#contact-form {
+		display: none;
 	}
 
 	.send-email {
