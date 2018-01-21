@@ -10,7 +10,7 @@
 	text-align: center;
 }
 
-.pmain {
+.animal-info {
 	text-align: left;
 	color: black;
 	font-family: david;
@@ -21,7 +21,7 @@
 	margin: 1%;
 }
 
-.pnew {
+.animal-photos {
 	float: left;
 	width: 33%;
 	background-color: #adcc6e;
