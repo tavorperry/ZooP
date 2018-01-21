@@ -48,6 +48,7 @@
           </div>
         </div>
     </header>
+    
 <?php include 'connection.php'; ?>
 <?php
 //This Part is to insert the variables into the DB
