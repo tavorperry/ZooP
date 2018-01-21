@@ -1,5 +1,5 @@
 # ZooP
-This is our URL for master branch: https://rawgit.com/tavorperry/ZooP/master/../index2.html
+This is our URL for master branch: https://rawgit.com/tavorperry/ZooP/master/index2.html
 
 <! Keep it in your favorite bar in chrome !>
 
