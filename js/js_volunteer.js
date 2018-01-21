@@ -1,12 +1,8 @@
-$(document).ready(function () {
-    if(typeof jQuery=="undefined"){
+if(typeof jQuery=="undefined"){
         alert("jQuery id undefined");
     }
-});
-/**
- * Validate our form
- */
-function validateForm() {
+    else{
+    function validateForm() {
     var id = document.forms["volunteer"]["id"].value;
     var phone = document.forms["volunteer"]["phone"].value;
     var email = document.forms["volunteer"]["email"].value;
@@ -32,4 +28,7 @@ function validateForm() {
         $('input[name=DOB]').focus();
         return false;
     }
-}
+}};
+/**
+ * Validate our form
+ */
