@@ -20,7 +20,7 @@
 	text-align: center;
 }
 
-p {
+main {
 	font-family: Josefin Sans;
 }
 
@@ -45,8 +45,4 @@ p {
 
 .animal-image > img {
 	max-width: 100%;
-}
-
-#complete_char {
-	font-family: Ariel;
 }
