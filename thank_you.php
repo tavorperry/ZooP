@@ -78,6 +78,10 @@ $conn->close();
 <img src="Photos/Loading_icon.gif" alt="Loading icon" height="30px" width="30px">
 <h3>You will be redirect to the main page in several seconds </h3>
 <h2> <a href=index2.html>Click Here</a> if you are not redirected automatically </h2>
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 <script src="js/js_thank_you.js"></script>
 </body>
 </html>
