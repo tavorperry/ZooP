@@ -15,7 +15,7 @@ function validateForm() {
     if (id.length!=9) {
         alert("ID number must be 9 digits");
         $('input[name=id]').focus();
-        return (false);
+        return false;
     }
     if (phone.length<10 || phone.length>11){
        alert("Enter a valid phone number");
