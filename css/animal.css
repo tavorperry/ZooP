@@ -13,7 +13,6 @@
 .animal-info {
 	text-align: left;
 	color: black;
-	font-family: david;
 	float: left;
 	width: 60%;
 	background-position: center;
@@ -36,6 +35,10 @@
 	position: relative;
 }
 
+main {
+	font-family: Josefin Sans;
+}
+
 img:hover {
 	cursor: zoom-in;
 }
@@ -45,12 +48,4 @@ h1 {
 	text-align: center;
 	top: 0;
 	font-size: 80px;
-}
-
-h2 {
-	font-family: Acme;
-}
-
-p {
-	font-family: Josefin Sans;
 }
