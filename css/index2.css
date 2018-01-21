@@ -1,4 +1,3 @@
-/*header*/
 .welcome {
 	text-align: left;
 	background-image: url(https://www.freewebheaders.com/wordpress/wp-content/gallery/wildlife/funny-chimpanzee-thinking-in-future-header.jpg);
@@ -14,10 +13,9 @@
 }
 
 .white-caption {
-	color: white !important;
+	color: white;
 }
 
-/*main*/
 #live {
 	color: red;
 	font-weight: bold;
