@@ -1,5 +1,5 @@
 # ZooP
-This is our URL for master branch: https://rawgit.com/tavorperry/ZooP/master/index2.html
+This is our URL for master branch: https://rawgit.com/tavorperry/ZooP/master/../index2.html
 
 <! Keep it in your favorite bar in chrome !>
 
@@ -14,5 +14,5 @@ Main rules:
   
 2. Keep on clean code with comments inside the file to understand
 
-This is our URL to PRD: https://cdn.rawgit.com/tavorperry/ZooP/c29474b9/index2.html
+This is our URL to PRD: https://cdn.rawgit.com/tavorperry/ZooP/c29474b9/../index2.html
 (Dont use it regulary)

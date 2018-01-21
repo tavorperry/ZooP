@@ -23,18 +23,18 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index2.html"><i class="fa fa-leaf" aria-hidden="true"></i> MTA Zoo</a>
+          <a class="navbar-brand" href="../index2.html"><i class="fa fa-leaf" aria-hidden="true"></i> MTA Zoo</a>
         </div>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="index2.html">About <span class="sr-only">(current)</span></a></li>
-            <li><a href="gallery.html">Our Animals</a></li>
+            <li class="active"><a href="../index2.html">About <span class="sr-only">(current)</span></a></li>
+            <li><a href="includes/gallery.html">Our Animals</a></li>
             <li><a href="#">Zoo Map</a></li>
             <li><a href="#">Zoo Aquarium</a></li>
             <li><a href="#">Visitor Info</a></li>
-            <li><a href="daily_schedule.html">Daily Schedule</a></li>
-            <li><a href="volunteer.html">Volunteering</a></li>
+            <li><a href="includes/daily_schedule.html">Daily Schedule</a></li>
+            <li><a href="includes/volunteer.html">Volunteering</a></li>
           </ul> 
         </div>
       </div>

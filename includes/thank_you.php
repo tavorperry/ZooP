@@ -22,17 +22,17 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index2.html"><i class="fa fa-leaf" aria-hidden="true"></i> MTA Zoo</a>
+            <a class="navbar-brand" href="../index2.html"><i class="fa fa-leaf" aria-hidden="true"></i> MTA Zoo</a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li><a href="index2.html">About</a></li>
-                <li><a href="gallery.html">Our Animals</a></li>
+                <li><a href="../index2.html">About</a></li>
+                <li><a href="includes/gallery.html">Our Animals</a></li>
                 <li><a href="#">Zoo Map</a></li>
                 <li><a href="#">Zoo Aquarium</a></li>
                 <li><a href="#">Visitor Info</a></li>
-                <li><a href="daily_schedule.html">Daily Schedule</a></li>
-                <li class="active"><a href="volunteer.html">Volunteering</a><span class="sr-only">(current)</span></li>
+                <li><a href="includes/daily_schedule.html">Daily Schedule</a></li>
+                <li class="active"><a href="includes/volunteer.html">Volunteering</a><span class="sr-only">(current)</span></li>
             </ul> 
         </div>
         </div>
@@ -77,7 +77,7 @@ $conn->close();
 ?>
 <img src="Photos/Loading_icon.gif" alt="Loading icon" height="30px" width="30px">
 <h3>You will be redirect to the main page in several seconds </h3>
-<h2> <a href=index2.html>Click Here</a> if you are not redirected automatically </h2>
+<h2> <a href=../index2.html>Click Here</a> if you are not redirected automatically </h2>
 
 <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
