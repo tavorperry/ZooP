@@ -15,8 +15,8 @@ $(document).ready(function () {
 
    for (var i = 0; i < animals.length; i++) {
     var animal = animals[i].id;
-    $('#' + animal + ' .description').load(animal + ".html .pmain h2").text();
-}
+    $('#' + animal + ' .description').load(animal + ".html .animal-info h2").text();
+    }
 }
 
 /**
