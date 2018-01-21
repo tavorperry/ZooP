@@ -3,8 +3,8 @@
 <head>
     <title>Thank you</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/volunteer.css">
-    <link rel="stylesheet" type="text/css" href="css/thank_you.css">
+    <link rel="stylesheet" type="text/css" href="../css/volunteer.css">
+    <link rel="stylesheet" type="text/css" href="../css/thank_you.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Acme|Bree+Serif|Indie+Flower|Josefin+Sans:600" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,12 +27,12 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <li><a href="../index2.html">About</a></li>
-                <li><a href="includes/gallery.html">Our Animals</a></li>
+                <li><a href="gallery.html">Our Animals</a></li>
                 <li><a href="#">Zoo Map</a></li>
                 <li><a href="#">Zoo Aquarium</a></li>
                 <li><a href="#">Visitor Info</a></li>
-                <li><a href="includes/daily_schedule.html">Daily Schedule</a></li>
-                <li class="active"><a href="includes/volunteer.html">Volunteering</a><span class="sr-only">(current)</span></li>
+                <li><a href="daily_schedule.html">Daily Schedule</a></li>
+                <li class="active"><a href="volunteer.html">Volunteering</a><span class="sr-only">(current)</span></li>
             </ul> 
         </div>
         </div>
@@ -82,6 +82,6 @@ $conn->close();
 <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-<script src="js/js_thank_you.js"></script>
+<script src="../js/js_thank_you.js"></script>
 </body>
 </html>
