@@ -5,15 +5,16 @@
 	background-position: center;
 	margin-top: 2.7%;
 	color: white;
+    font-family: Josefin Sans;
 }
 
 .white-caption {
 	color: white;
 }
 
-.info {
-	font-family: Josefin Sans;
-	text-align: center;
+main {
+    font-family: Josefin Sans;
+    text-align: center;
 }
 
 blink {

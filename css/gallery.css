@@ -43,10 +43,6 @@ p {
     padding: 3px;
 }
 
-.animal-image {
-
-}
-
 .animal-image > img {
 	max-width: 100%;
 }
