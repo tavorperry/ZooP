@@ -1,7 +1,8 @@
 if(typeof jQuery=="undefined"){
         alert("jQuery id undefined");
     }
-    else{
+    else {
+        
     function validateForm() {
     var id = document.forms["volunteer"]["id"].value;
     var phone = document.forms["volunteer"]["phone"].value;
@@ -29,6 +30,4 @@ if(typeof jQuery=="undefined"){
         return false;
     }
 }};
-/**
- * Validate our form
- */
+
