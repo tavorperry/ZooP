@@ -29,9 +29,9 @@
           <ul class="nav navbar-nav">
             <li class="active"><a href="../index2.html">About <span class="sr-only">(current)</span></a></li>
             <li><a href="gallery.html">Our Animals</a></li>
-            <li><a href="#">Zoo Map</a></li>
-            <li><a href="#">Zoo Aquarium</a></li>
-            <li><a href="#">Visitor Info</a></li>
+            <li><a title="Not Active" href="#">Zoo Map</a></li>
+            <li><a title="Not Active" href="#">Zoo Aquarium</a></li>
+            <li><a title="Not Active" href="#">Visitor Info</a></li>
             <li><a href="daily_schedule.html">Daily Schedule</a></li>
             <li><a href="volunteer.html">Volunteering</a></li>
           </ul> 
@@ -44,7 +44,7 @@
         <h1 class="white-caption"> Welcome to MTA Zoo <i class="fa fa-leaf" aria-hidden="true"></i> </h1>
         <p class="white-caption">MTA Zoo is the largest and oldest zoological garden in Tel-Aviv</p>
         <p class="white-caption">and the only sub-tropical zoo in Israel</p>
-        <p><a class="btn btn-warning btn-lg" href="#" role="button">Purchase Tickets</a></p>
+        <p><a class="btn btn-warning btn-lg" title="Not Active" href="#" role="button">Purchase Tickets</a></p>
       </div>
     </div>
   </header>
